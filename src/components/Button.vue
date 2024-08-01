@@ -3,7 +3,7 @@
     <slot />
     {{ label }}
   </router-link>
-  <button v-else type="button" class="cursor-pointer font-normal rounded-lg text-sm px-2.5 py-1.5 leading-[140%] flex gap-x-2 items-center select-none" :class="buttonClasses">
+  <button v-else type="button" class="cursor-pointer font-normal rounded-lg text-sm leading-[140%] flex gap-x-2 items-center select-none" :class="buttonClasses, icon ? 'p-2' : 'px-2.5 py-1.5'">
     <slot />
     {{ label }}
   </button>
@@ -18,7 +18,8 @@ const props = defineProps({
     type: String,
     default: 'black',
   },
-  linkTo: String
+  linkTo: String,
+  icon: Boolean
 })
 let buttonClasses = ref('')
 switch (props.color) {
@@ -26,7 +27,7 @@ switch (props.color) {
     buttonClasses.value = 'text-white bg-black hover:bg-background-color-blue focus:outline-none focus:ring-4 focus:ring-blue-300';
     break;
   case 'transparent':
-    buttonClasses.value = 'text-black bg-transparent hover:bg-background-color-background-secondary1 focus:outline-none focus:ring-4 focus:ring-background-color-background-secondary1';
+    buttonClasses.value = 'text-black bg-transparent hover:bg-background-color-background-secondary1 focus:outline-none';
     break;
 }
 </script>

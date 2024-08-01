@@ -33,10 +33,12 @@
           type="text"
         />
       </div>
+      <Button label="" color="transparent" class="lg:hidden ml-auto" :icon="true">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.5 10H17.5M2.5 5H17.5M2.5 15H17.5" stroke="black" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+        </svg>
+      </Button>
     </div>
-    <Button label="" color="transparent" class="lg:hidden">
-      <img src="https://cdn.hugeicons.com/icons/menu-01-solid-standard.svg" alt="menu-01" width="28" height="28">
-    </Button>
     <div
       class="lg:flex flex-row items-center justify-end gap-3 max-w-full hidden ml-auto"
     >
