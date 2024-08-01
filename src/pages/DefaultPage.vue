@@ -9,7 +9,7 @@
   >
     <Header />
     <main
-      class="container max-w-full 2xl:max-w-screen-2xl flex-1 flex flex-col gap-y-padding-vertical-desktop-small max-w-full text-17xl text-text-color-text-primary pb-padding-vertical-desktop-main pt-padding-vertical-desktop-small border-box px-space-medium md:px-padding-horizontal-desktop-index"
+      class="container max-w-full 2xl:max-w-screen-2xl flex-1 flex flex-col gap-y-padding-vertical-desktop-small max-w-full text-17xl text-text-color-text-primary pb-padding-vertical-desktop-main pt-padding-vertical-desktop-small border-box px-padding-horizontal-desktop-index"
     >
       <div
         class="max-w-full"
