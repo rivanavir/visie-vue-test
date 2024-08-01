@@ -21,6 +21,6 @@
 
 @layer components {
 	body {
-		@apply font-regular leading-[normal] m-0 bg-background-color-background-primary;
+		@apply font-regular leading-[normal] m-0 bg-white;
 	}
 }

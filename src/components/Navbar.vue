@@ -1,6 +1,6 @@
 <template>
   <div
-    class="self-stretch flex items-center justify-between py-space-medium box-border max-w-full gap-5 text-left text-mini text-grey4 lg:flex-wrap"
+    class="self-stretch flex items-center justify-between py-6 box-border max-w-full gap-5 lg:flex-wrap"
   >
     <div
       class="flex flex-row items-center justify-start gap-4 md:gap-12 flex-1"
@@ -17,15 +17,15 @@
         </router-link>
       </div>
       <div
-        class="flex-1 rounded-radius-round bg-background-color-background-secondary1 overflow-hidden flex flex-row items-center justify-start py-space-tiny pl-space-extra-small box-border gap-2 md:min-w-[216px] border border-solid transition-all"
-        :class="isFocused ? 'border-text-color-text-primary lg:max-w-[513px] lg:min-w-[513px]' : 'border-transparent lg:max-w-[216px]'"
+        class="flex-1 rounded-full bg-bg-secondary1 overflow-hidden flex flex-row items-center justify-start py-2 pl-3 box-border gap-2 md:min-w-[216px] border border-solid transition-all"
+        :class="isFocused ? 'border-black lg:max-w-[513px] lg:min-w-[513px]' : 'border-transparent lg:max-w-[216px]'"
       >
         <svg class="h-5 w-5 relative overflow-hidden shrink-0 min-h-5" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.909 17.9243L18.3333 18.3485L19.1818 17.5L18.7575 17.0757L17.909 17.9243ZM15.1325 13.4507C14.8982 13.2164 14.5183 13.2164 14.284 13.4507C14.0497 13.6851 14.0497 14.0649 14.284 14.2993L15.1325 13.4507ZM18.7575 17.0757L15.1325 13.4507L14.284 14.2993L17.909 17.9243L18.7575 17.0757ZM16.0666 9.16667C16.0666 12.5172 13.3505 15.2333 9.99992 15.2333V16.4333C14.0132 16.4333 17.2666 13.18 17.2666 9.16667H16.0666ZM9.99992 15.2333C6.64939 15.2333 3.93325 12.5172 3.93325 9.16667H2.73325C2.73325 13.18 5.98665 16.4333 9.99992 16.4333V15.2333ZM3.93325 9.16667C3.93325 5.81614 6.64939 3.1 9.99992 3.1V1.9C5.98665 1.9 2.73325 5.1534 2.73325 9.16667H3.93325ZM9.99992 3.1C13.3505 3.1 16.0666 5.81614 16.0666 9.16667H17.2666C17.2666 5.1534 14.0132 1.9 9.99992 1.9V3.1Z" fill="#666666"/>
         </svg>
 
         <input
-          class="flex-1 border-0 outline-0 text-sm bg-transparent h-5 flex-1 relative leading-[140%] text-text-color-text-secondary1 text-left inline-block p-0"
+          class="flex-1 border-0 outline-0 text-sm bg-transparent h-5 flex-1 relative leading-[140%] text-text-secondary1 text-left inline-block p-0"
           :placeholder="isFocused ? 'Search for production professionals and companies' : 'Search'"
           v-model="search"
           @focus="isSerachFocused(true)"
@@ -48,7 +48,7 @@
         <Button v-for="(nav, idx) in navigations" :linkTo="nav.link" :key="idx" :label="nav.text" color="transparent" />
       </nav>
       <div
-        class="h-4 w-px relative box-border border-r border-solid border-border-color-border-primary1"
+        class="h-4 w-px relative box-border border-r border-solid border-border-primary1"
       />
       <Button label="Sign in" color="transparent" />
       <Button label="Sign up" color="black" />

@@ -24,10 +24,10 @@ const props = defineProps({
 let buttonClasses = ref('')
 switch (props.color) {
   case 'black':
-    buttonClasses.value = 'text-white bg-black hover:bg-background-color-blue focus:outline-none focus:ring-4 focus:ring-blue-300';
+    buttonClasses.value = 'text-white bg-black hover:bg-bg-blue focus:outline-none focus:ring-4 focus:ring-blue-300';
     break;
   case 'transparent':
-    buttonClasses.value = 'text-black bg-transparent hover:bg-background-color-background-secondary1 focus:outline-none';
+    buttonClasses.value = 'text-black bg-transparent hover:bg-bg-secondary1 focus:outline-none';
     break;
 }
 </script>

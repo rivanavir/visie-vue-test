@@ -1,19 +1,19 @@
 <template>
   <footer
-    class="self-stretch bg-background-color-background-secondary overflow-hidden flex flex-col items-center justify-center max-w-full text-left text-base text-background-color-background-primary pt-12 sm:pt-padding-vertical-desktop-small lg:pt-padding-vertical-desktop-main"
+    class="self-stretch bg-bg-secondary overflow-hidden flex flex-col items-center justify-center max-w-full text-left text-base text-white pt-12 sm:pt-20 lg:pt-28"
   >
-    <div class="container max-w-full 2xl:max-w-screen-2xl px-4 md:px-padding-horizontal-desktop-index box-border">
-      <div class="flex flex-col gap-space-medium md:gap-padding-vertical-desktop-tiny lg:gap-padding-vertical-desktop-main border-box">
+    <div class="container max-w-full 2xl:max-w-screen-2xl px-4 md:px-8 box-border">
+      <div class="flex flex-col gap-6 md:gap-10 lg:gap-28 border-box">
         <div
-          class="flex-1 w-full max-w-full text-left text-sm text-text-color-text-secondary1 flex flex-col sm:flex-row sm:flex-wrap lg:grid lg:grid-cols-4 gap-grid-gap-main"
+          class="flex-1 w-full max-w-full text-left text-sm text-text-secondary1 flex flex-col sm:flex-row sm:flex-wrap lg:grid lg:grid-cols-4"
           v-for="(footerSection, idx) in footerSections" :key="idx"
-          :class="idx+1 === footerSections.length ? 'border-t border-solid border-border-color-border-primary py-space-medium gap-space-extra-small !flex-wrap !flex-row' : ''"
+          :class="idx+1 === footerSections.length ? 'border-t border-solid border-border-primary py-6 gap-3 !flex-wrap !flex-row' : 'gap-6'"
         >
           <template v-for="section in footerSection">
             <h4 class="font-normal m-0 text-white sm:w-full" :class="`${idx+1 === footerSections.length ? 'text-sm' : 'text-base'} ${!section.title ? 'hidden md:inline-block' : ''}`">{{ section?.title }}</h4>
-            <div class="flex flex-col items-start gap-y-space-extra-small sm:flex-1" v-for="(subSection, index) in section?.subSections" :key="index">
+            <div class="flex flex-col items-start gap-y-3 sm:flex-1" v-for="(subSection, index) in section?.subSections" :key="index">
               <p v-if="subSection.columnTitle" class="text-base text-white no-underline m-0 md:pb-1.5">{{ subSection.columnTitle }}</p>
-              <router-link :to="{ name: 'Default', params: { id: item } }" class="font-normal text-text-color-text-secondary no-underline hover:text-white" v-for="(item, index) in subSection.items" :key="index">
+              <router-link :to="{ name: 'Default', params: { id: item } }" class="font-normal text-text-secondary no-underline hover:text-white" v-for="(item, index) in subSection.items" :key="index">
                 {{ item }}
               </router-link>
             </div>

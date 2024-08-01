@@ -9,13 +9,13 @@
   >
     <Header />
     <main
-      class="container max-w-screen-2xl flex-1 flex flex-col gap-y-12 md:gap-y-padding-vertical-desktop-small max-w-full text-17xl text-text-color-text-primary md:pb-padding-vertical-desktop-main pb-12 pt-6 md:pt-padding-vertical-desktop-small px-4 md:px-padding-horizontal-desktop-index box-border"
+      class="container max-w-screen-2xl flex-1 flex flex-col gap-y-12 md:gap-y-20 max-w-full text-black md:pb-28 pb-12 pt-6 md:pt-20 px-4 md:px-8 box-border"
     >
       <div
         class="max-w-full"
       >
         <h1
-          class="m-0 relative text-2xl md:text-inherit leading-[115%] font-normal font-inherit block"
+          class="m-0 relative text-2xl md:text-4xl leading-[115%] font-normal font-inherit block"
         >
           {{ $route.params.id }} page
         </h1>
