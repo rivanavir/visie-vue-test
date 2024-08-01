@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="self-stretch bg-background-color-background-secondary overflow-hidden flex flex-col items-center justify-center max-w-full text-left text-base text-background-color-background-primary pt-padding-vertical-desktop-tiny sm:pt-padding-vertical-desktop-small lg:pt-padding-vertical-desktop-main"
+    class="self-stretch bg-background-color-background-secondary overflow-hidden flex flex-col items-center justify-center max-w-full text-left text-base text-background-color-background-primary pt-12 sm:pt-padding-vertical-desktop-small lg:pt-padding-vertical-desktop-main"
   >
     <div class="container max-w-full 2xl:max-w-screen-2xl px-4 md:px-padding-horizontal-desktop-index box-border">
       <div class="flex flex-col gap-space-medium md:gap-padding-vertical-desktop-tiny lg:gap-padding-vertical-desktop-main border-box">
@@ -12,7 +12,7 @@
           <template v-for="section in footerSection">
             <h4 class="font-normal m-0 text-white sm:w-full" :class="`${idx+1 === footerSections.length ? 'text-sm' : 'text-base'} ${!section.title ? 'hidden md:inline-block' : ''}`">{{ section?.title }}</h4>
             <div class="flex flex-col items-start gap-y-space-extra-small sm:flex-1" v-for="(subSection, index) in section?.subSections" :key="index">
-              <p v-if="subSection.columnTitle" class="text-base text-white no-underline m-0 pb-1.5">{{ subSection.columnTitle }}</p>
+              <p v-if="subSection.columnTitle" class="text-base text-white no-underline m-0 md:pb-1.5">{{ subSection.columnTitle }}</p>
               <router-link :to="{ name: 'Default', params: { id: item } }" class="font-normal text-text-color-text-secondary no-underline hover:text-white" v-for="(item, index) in subSection.items" :key="index">
                 {{ item }}
               </router-link>
