@@ -4,7 +4,7 @@
   >
     <Header />
     <main
-      class="container max-w-screen-2xl flex-1 flex flex-col gap-y-padding-vertical-desktop-tiny md:gap-y-padding-vertical-desktop-small max-w-full text-17xl text-text-color-text-primary pb-padding-vertical-desktop-main pt-padding-vertical-desktop-tiny md:pt-padding-vertical-desktop-small px-padding-horizontal-desktop-index box-border"
+      class="container max-w-screen-2xl flex-1 flex flex-col gap-y-padding-vertical-desktop-tiny md:gap-y-padding-vertical-desktop-small max-w-full text-17xl text-text-color-text-primary md:pb-padding-vertical-desktop-main py-padding-vertical-desktop-tiny md:pt-padding-vertical-desktop-small px-4 md:px-padding-horizontal-desktop-index box-border"
     >
       <div
         class="max-w-full"
@@ -16,14 +16,13 @@
         </h1>
       </div>
       <div
-        class="flex-1 w-full max-w-full text-left text-sm text-text-color-text-secondary1 flex flex-col lg:grid lg:grid-cols-4 pt-space-medium lg:gap-x-grid-gap-main gap-y-padding-horizontal-desktop-main border-t border-solid border-border-color-border-primary1"
+        class="flex-1 w-full max-w-full text-left text-sm text-text-color-text-secondary1 flex flex-col lg:grid lg:grid-cols-4 pt-space-medium lg:gap-x-grid-gap-main gap-y-grid-gap-main md:gap-y-padding-horizontal-desktop-main border-t border-solid border-border-color-border-primary1"
         v-for="(section, idx) in sections" :key="idx"
       >
         <h4 class="font-normal text-base m-0 text-text-color-text-primary">{{ section?.title }}</h4>
-        <!-- <div class="col-span-3 grid grid-cols-3 gap-x-grid-gap-main gap-y-space-extra-small"> -->
         <div class="lg:col-span-3 relative columns-1 md:columns-3 gap-x-grid-gap-main gap-y-space-extra-small">
           <div class="py-1.5" v-for="(item, index) in section.items" :key="index">
-            <router-link :to="{ name: 'Default', params: { id: item } }" class="font-medium text-text-color-text-secondary1 no-underline hover:text-text-color-text-primary">
+            <router-link :to="{ name: 'Default', params: { id: item } }" class="font-normal text-text-color-text-secondary1 no-underline hover:text-text-color-text-primary">
               {{ item }}
             </router-link>
           </div>

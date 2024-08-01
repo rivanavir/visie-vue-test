@@ -6,7 +6,7 @@
       class="flex flex-row items-center justify-start gap-4 md:gap-12 flex-1"
     >
       <div class="flex flex-row items-center justify-start gap-10">
-        <router-link :to="{ name: 'BrowseAll', params: { }}" class="no-underline cursor-pointer flex gap-x-2 items-center select-none bg-transparent">
+        <router-link :to="{ name: 'BrowseAll', params: { }}" class="w-[70px] md:w-[96px] no-underline cursor-pointer flex gap-x-2 items-center select-none bg-transparent">
           <svg width="96" height="30" viewBox="0 0 96 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M60.8142 20.6174C60.8142 14.4557 56.1244 12.8052 50.9265 11.557C46.7432 10.5897 44.5943 10.1075 44.5943 8.09305C44.5943 6.48242 46.1963 5.39536 48.6192 5.39536C51.1988 5.39536 52.8412 6.64354 53.1138 8.85934H59.8767C59.6027 2.81712 54.9129 0 48.8551 0C42.6003 0 37.7542 2.69768 37.7542 8.85934C37.7542 14.8995 42.8747 16.4288 47.7211 17.5972C51.5509 18.5627 53.8194 19.0467 53.8194 21.342C53.8194 23.5161 51.5916 24.3622 49.3231 24.3622C46.0014 24.3622 44.1639 23.1537 43.8525 20.2549H36.8945C37.0509 26.6141 41.9323 29.9962 49.3509 30H49.3744C55.8171 29.9962 60.8142 26.6543 60.8142 20.6174Z" fill="black"/>
           <path d="M16.3774 29.3154L25.5615 0.523621H18.5647L14.2268 15.6244C13.6411 17.7586 12.9378 20.6973 12.9378 20.6973H12.8587C12.8587 20.6973 12.1941 17.7985 11.5697 15.6244L7.1913 0.523621H0V0.52569L9.22398 29.3154H16.3774Z" fill="black"/>
