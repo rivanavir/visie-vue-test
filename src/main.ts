@@ -14,13 +14,13 @@ interface Route {
 
 const routes: Route[] = [
 	{
-		path: '/visit-vue-test',
+		path: '/',
 		name: 'BrowseAll',
 		component: BrowseAll,
 	},
 	// Temporary route
 	{
-		path: '/visit-vue-test/:id',
+		path: '/:id',
 		name: 'Default',
 		component: DefaultPage,
 	},
